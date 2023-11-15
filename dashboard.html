@@ -11,9 +11,8 @@
 
 <body class="bg-gray-200">
 
-
     <!--Second breadcrumb-->
-    <div class="mt-5 w-full ml-16 sm:ml-64">
+    <div class="mt-5 ml-16 sm:ml-64">
         <ol class="list-reset flex w-11/12 mx-auto">
             <li>
                 <a href="index.html" class="text-blue-900 font-semibold mr-1">Dashboard</a>
@@ -115,7 +114,7 @@
             </ul>
 
             <!-- mobile side nav -->
-            <div class="block sm:hidden">
+            <div class="block sm:hidden mt-3">
                 <a class="group flex items-center border-t border-gray-700" href="#">
                     <i class="ri-menu-line py-2 text-3xl text-gray-100"></i>
                     <!-- custom tooltip -->
@@ -123,11 +122,11 @@
                     -translate-x-1/2 translate-y-full opacity-0 m-1 mx-auto">Dashboard</span> -->
                 </a>
 
-                <a class="flex items-center border-t border-gray-700" href="#">
+                <a class="flex items-center border-t border-gray-700" href="dashboard.html">
                     <i class="ri-pie-chart-line py-2 text-3xl text-gray-100"></i>
                 </a>
 
-                <a class="flex items-center border-t border-gray-700" href="#">
+                <a class="flex items-center border-t border-gray-700" href="mailbox.html">
                     <i class="ri-mail-line py-2 text-3xl text-gray-100"></i>
                 </a>
 
@@ -157,7 +156,7 @@
 
         <!-- Dashboard body -->
         <main class="w-full ml-16 sm:ml-64 min-h-screen">
-            <nav class="w-11/12 mx-auto mt-3 py-2 px-4 bg-white flex items-center justify-end shadow-md shadow-black/5">
+            <nav class="w-11/12 mx-auto mt-8 py-2 px-4 bg-white flex items-center justify-end shadow-md shadow-black/5">
                 <div class="flex items-center mr-6">
                     <div class="w-13 text-right">
                         <span class="block text-sm">
@@ -182,8 +181,104 @@
                         </a>
                     </li>
                 </ul>
-
             </nav>
+
+
+            <!-- Dashboard stats -->
+            <div class="flex flex-wrap gap-4 w-11/12 mx-auto mt-2">
+
+                <div class="w-full xl:max-w-[23.5%] mx-auto bg-white rounded-xl border border-gray-400">
+
+                    <div class="flex justify-between p-4">
+                        <div
+                            class="flex justify-center text-lg items-center rounded-xl text-white h-14 w-14 bg-blue-950">
+                            <i class="ri-user-fill text-3xl"></i>
+                        </div>
+
+                        <div>
+                            <div>
+                                <p class="text-gray-500">Total Users</p>
+                                <span class="block text-right">850.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-blue-gray-50">
+                        <p class="p-4"><span class="text-green-600">4%</span> More than last month</p>
+                    </div>
+
+                </div>
+
+
+                <div class="w-full xl:max-w-[23.5%] mx-auto bg-white rounded-xl border border-gray-400">
+
+                    <div class="flex justify-between p-4">
+                        <div
+                            class="flex justify-center text-lg items-center rounded-xl text-white h-14 w-14 bg-lime-500">
+                            <i class="ri-shopping-cart-2-fill text-3xl"></i>
+                        </div>
+
+                        <div>
+                            <div>
+                                <p class="text-gray-500">New Orders</p>
+                                <span class="block text-right">2.350</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-blue-gray-50">
+                        <p class="p-4"><span class="text-green-600">25%</span> More than last week</p>
+                    </div>
+
+                </div>
+
+                <div class="w-full xl:max-w-[23.5%] mx-auto bg-white rounded-xl border border-gray-400">
+
+                    <div class="flex justify-between p-4">
+                        <div
+                            class="flex justify-center text-lg items-center rounded-xl text-white h-14 w-14 bg-purple-500">
+                            <i class="ri-money-dollar-circle-fill text-3xl"></i>
+
+                        </div>
+
+                        <div>
+                            <div>
+                                <p class="text-gray-500">Last Week Earnings</p>
+                                <span class="block text-right">$ 18.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-blue-gray-50">
+                        <p class="p-4"><span class="text-green-600">45%</span> More than last week</p>
+                    </div>
+
+                </div>
+
+                <div class="w-full xl:max-w-[23.5%] mx-auto bg-white rounded-xl border border-gray-400">
+
+                    <div class="flex justify-between p-4">
+                        <div
+                            class="flex justify-center text-lg items-center rounded-xl text-white h-14 w-14 bg-red-600">
+                            <i class="ri-refund-2-fill text-3xl"></i>
+                        </div>
+
+                        <div>
+                            <div>
+                                <p class="text-gray-500">Orders Cancelled</p>
+                                <span class="block text-right">235</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-blue-gray-50">
+                        <p class="p-4"><span class="text-red-600">8%</span> Less than last week</p>
+                    </div>
+
+                </div>
+
+
+            </div>
 
 
         </main>
