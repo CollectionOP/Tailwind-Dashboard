@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <link rel="stylesheet" href="dist/style.css">
     <title>Dashboard</title>
+
 </head>
 
 <body class="bg-gray-200">
@@ -279,6 +281,79 @@
 
 
             </div>
+
+            <!-- Dashboard charts -->
+
+            <div class="flex flex-wrap">
+                <div class="w-11/12 xl:w-6/12 mx-auto bg-white mt-8 p-4 rounded-md">
+                    <div class="w-4 h-5 mx-auto text-sm">
+                        <p>Orders</p>
+
+                    </div>
+
+                    <canvas id="myChart" style="width:100%"></canvas>
+
+                    <script>
+                        const xValues = [2018, 2019, 2020, 2021, 2022, 2023];
+                        const yValues = [1, 3, 2, 4, 9, 6, 5, 6, 14, 3, 15,];
+
+                        new Chart("myChart", {
+                            type: "line",
+                            data: {
+                                labels: xValues,
+                                datasets: [{
+                                    fill: false,
+                                    lineTension: 0.5,
+                                    backgroundColor: "rgba(0,0,255,1.0)",
+                                    borderColor: "rgba(0,0,255,0.1)",
+                                    data: yValues
+                                }]
+                            },
+                            options: {
+                                legend: { display: false },
+                                scales: {
+                                    yAxes: [{ ticks: { min: 1, max: 10 } }],
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+
+                <div class="w-11/12 xl:w-4/12 mx-auto bg-white mt-8 p-4 rounded-md">
+                    <canvas id="myChart2" style="width:100%; height: 100%;"></canvas>
+
+                    <script>
+                        var xValuess = ["Italy", "France", "Spain", "USA", "Argentina"];
+                        var yValuess = [55, 49, 44, 24, 15];
+                        var barColors = [
+                            "#b91d47",
+                            "#00aba9",
+                            "#2b5797",
+                            "#e8c3b9",
+                            "#1e7145"
+                        ];
+
+                        new Chart("myChart2", {
+                            type: "pie",
+                            data: {
+                                labels: xValuess,
+                                datasets: [{
+                                    backgroundColor: barColors,
+                                    data: yValuess
+                                }]
+                            },
+                            options: {
+                                title: {
+                                    display: true,
+                                    text: "Customers"
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+
+
 
 
         </main>
