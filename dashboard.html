@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/style.css">
+    <title>Dashboard</title>
+</head>
+
+<body class="flex">
+
+    <!-- Side navbar -->
+    <div class="w-16 fixed sm:w-64 left-0 top-0 h-full p-4 bg-blue-950">
+        <a class="flex items-center pb-4 border-b border-b-gray-800" href="index.html">
+            <img class="w-8 h-8 rounded object-cover" src="https://placehold.co/40x40" alt="">
+            <span class="hidden sm:block text-lg font-bold text-gray-200 ml-3">Logo</span>
+        </a>
+        <ul class="hidden sm:block mt-3">
+            <li class="mb-1 group active">
+                <a class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-slate-500 group-[.active]:text-white group-[.active]:font-semibold"
+                    href="#">
+                    <i class="ri-pie-chart-line mr-3 text-lg"></i>
+                    <span class="text-sm">Dashboard</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 hover:font-semibold rounded-md"
+                    href="mailbox.html">
+                    <i class="ri-mail-line mr-3 text-lg"></i>
+                    <span class="text-sm">Mailbox</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 hover:font-semibold rounded-md"
+                    href="#">
+                    <i class="ri-instance-line mr-3 text-lg"></i>
+                    <span class="text-sm">Orders</span>
+                    <i class="ri-arrow-right-line ml-auto"></i>
+                </a>
+                <ul class="pl-7 mt-2">
+                    <li class="mb-3">
+                        <a class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3"
+                            href="#">Active orders</a>
+                    </li>
+                    <li class="mb-3">
+                        <a class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3"
+                            href="#">Completed orders</a>
+                    </li>
+                    <li class="mb-3">
+                        <a class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3"
+                            href="#">Canceled orders</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mb-1 group">
+                <a class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 hover:font-semibold rounded-md"
+                    href="#">
+                    <i class="ri-bar-chart-2-line mr-3 text-lg"></i>
+                    <span class="text-sm">Charts</span>
+                    <i class="ri-arrow-right-line ml-auto"></i>
+                </a>
+                <ul class="pl-7 mt-2">
+                    <li class="mb-3">
+                        <a class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3"
+                            href="#">Flot</a>
+                    </li>
+                    <li class="mb-3">
+                        <a class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3"
+                            href="#">ChartJS</a>
+                    </li>
+                    <li class="mb-3">
+                        <a class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3"
+                            href="#">Chartist</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mb-1 group">
+                <a class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 hover:font-semibold rounded-md"
+                    href="#">
+                    <i class="ri-edit-box-line mr-3 text-lg"></i>
+                    <span class="text-sm">Components</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 hover:font-semibold rounded-md"
+                    href="#">
+                    <i class="ri-inbox-2-line mr-3 text-lg"></i>
+                    <span class="text-sm">Forms</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 hover:font-semibold rounded-md"
+                    href="#">
+                    <i class="ri-settings-4-line mr-3 text-lg"></i>
+                    <span class="text-sm">Settings</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- mobile side nav -->
+        <div class="block sm:hidden">
+            <a class="group flex items-center border-t border-gray-700" href="#">
+                <i class="ri-menu-line py-2 text-3xl text-gray-100"></i>
+                <!-- custom tooltip -->
+                <!-- <span class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-28 top-10
+                    -translate-x-1/2 translate-y-full opacity-0 m-1 mx-auto">Dashboard</span> -->
+            </a>
+
+            <a class="flex items-center border-t border-gray-700" href="#">
+                <i class="ri-pie-chart-line py-2 text-3xl text-gray-100"></i>
+            </a>
+
+            <a class="flex items-center border-t border-gray-700" href="#">
+                <i class="ri-mail-line py-2 text-3xl text-gray-100"></i>
+            </a>
+
+            <a class="flex items-center border-t border-gray-700" href="#">
+                <i class="ri-instance-line py-2 text-3xl text-gray-100"></i>
+            </a>
+
+            <a class="flex items-center border-t border-gray-700" href="#">
+                <i class="ri-bar-chart-2-line py-2 text-3xl text-gray-100"></i>
+            </a>
+
+            <a class="flex items-center border-t border-gray-700" href="#">
+                <i class="ri-edit-box-line py-2 text-3xl text-gray-100"></i>
+            </a>
+
+            <a class="flex items-center border-t border-gray-700" href="#">
+                <i class="ri-inbox-2-line py-2 text-3xl text-gray-100"></i>
+            </a>
+
+            <a class="flex items-center border-t border-gray-700" href="#">
+                <i class="ri-settings-4-line py-2 text-3xl text-gray-100"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Dashboard body -->
+    <main class="w-full ml-16 sm:ml-64 bg-gray-200 min-h-screen">
+        <nav class="w-11/12 mx-auto mt-3 py-2 px-4 bg-white flex items-center justify-end shadow-md shadow-black/5">
+            <div class="flex items-center mr-6">
+                <div class="w-13 text-right">
+                    <span class="block text-sm">
+                        John
+                    </span>
+                    <span class="block text-sm">
+                        Doe
+                    </span>
+                </div>
+                <img class="w-10 h-10 ml-2" src="assets/avatar.svg" alt="">
+            </div>
+
+            <ul class="flex w-16 justify-between">
+                <li>
+                    <a href="">
+                        <i class="ri-notification-4-line text-lg"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="ri-settings-4-line mr-3 text-lg"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </main>
+
+
+</body>
+
+</html>
