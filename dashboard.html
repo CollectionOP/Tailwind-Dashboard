@@ -13,7 +13,7 @@
 
 <body class="bg-gray-200">
 
-    <!--Second breadcrumb-->
+    <!--Breadcrumb navigation -->
     <div class="mt-5 ml-16 sm:ml-64">
         <ol class="list-reset flex w-11/12 mx-auto">
             <li>
@@ -158,6 +158,8 @@
 
         <!-- Dashboard body -->
         <main class="w-full ml-16 sm:ml-64 min-h-screen">
+
+            <!-- Main navbar -->
             <nav class="w-11/12 mx-auto mt-8 py-2 px-4 bg-white flex items-center justify-end shadow-md shadow-black/5">
                 <div class="flex items-center mr-6">
                     <div class="w-13 text-right">
@@ -183,13 +185,14 @@
                         </a>
                     </li>
                 </ul>
+
             </nav>
 
 
             <!-- Dashboard stats -->
             <div class="flex flex-wrap gap-4 w-11/12 mx-auto mt-10">
 
-                <div class="w-full xl:max-w-[23.5%] mx-auto bg-white rounded-xl border border-gray-400">
+                <div class="w-full xl:max-w-[23.5%] mx-auto bg-white rounded-xl shadow-md shadow-black/5">
 
                     <div class="flex justify-between p-4">
                         <div
@@ -212,7 +215,7 @@
                 </div>
 
 
-                <div class="w-full xl:max-w-[23.5%] mx-auto bg-white rounded-xl border border-gray-400">
+                <div class="w-full xl:max-w-[23.5%] mx-auto bg-white rounded-xl shadow-md shadow-black/5">
 
                     <div class="flex justify-between p-4">
                         <div
@@ -234,7 +237,7 @@
 
                 </div>
 
-                <div class="w-full xl:max-w-[23.5%] mx-auto bg-white rounded-xl border border-gray-400">
+                <div class="w-full xl:max-w-[23.5%] mx-auto bg-white rounded-xl shadow-md shadow-black/5">
 
                     <div class="flex justify-between p-4">
                         <div
@@ -257,7 +260,7 @@
 
                 </div>
 
-                <div class="w-full xl:max-w-[23.5%] mx-auto bg-white rounded-xl border border-gray-400">
+                <div class="w-full xl:max-w-[23.5%] mx-auto bg-white rounded-xl shadow-md shadow-black/5">
 
                     <div class="flex justify-between p-4">
                         <div
@@ -284,13 +287,14 @@
 
             <!-- Dashboard charts -->
 
-            <div class="flex flex-wrap">
-                <div class="w-11/12 xl:w-6/12 mx-auto bg-white mt-8 p-4 rounded-md">
-                    <div class="w-4 h-5 mx-auto text-sm">
+            <div class="grid grid-cols-1 gap-8 grid-rows-2 xl:grid-cols-2 xl:grid-rows-1">
+
+                <div class="w-11/12 xl:max-w-[91%] justify-self-center xl:justify-self-end bg-white mt-8 p-4 
+                            rounded-md shadow-md shadow-black/5">
+
+                    <div class="w-4 h-5 mx-auto text-sm text-gray-500">
                         <p>Orders</p>
-
                     </div>
-
                     <canvas id="myChart" style="width:100%"></canvas>
 
                     <script>
@@ -317,20 +321,26 @@
                             }
                         });
                     </script>
+
                 </div>
 
-                <div class="w-11/12 xl:w-4/12 mx-auto bg-white mt-8 p-4 rounded-md">
-                    <canvas id="myChart2" style="width:100%; height: 100%;"></canvas>
+                <div class="w-11/12 mx-auto sm:mx-0 xl:max-w-[91%] justify-self-center 
+                            xl:justify-self-start bg-white mt-8 p-4 rounded-md shadow-md shadow-black/5">
+                    <div class="w-4 h-5 mx-auto text-sm text-gray-500">
+                        <p>Customers</p>
+                    </div>
+
+                    <canvas id="myChart2" style="width:100%"></canvas>
 
                     <script>
                         var xValuess = ["Italy", "France", "Spain", "USA", "Argentina"];
                         var yValuess = [55, 49, 44, 24, 15];
                         var barColors = [
-                            "#b91d47",
-                            "#00aba9",
-                            "#2b5797",
-                            "#e8c3b9",
-                            "#1e7145"
+                            "rgb(220 38 38)",
+                            "rgb(96 165 250)",
+                            "rgb(23 37 84)",
+                            "rgb(132 204 22)",
+                            "rgb(168 85 247)"
                         ];
 
                         new Chart("myChart2", {
@@ -344,16 +354,14 @@
                             },
                             options: {
                                 title: {
-                                    display: true,
-                                    text: "Customers"
+                                    display: true
                                 }
                             }
                         });
                     </script>
+
                 </div>
             </div>
-
-
 
 
         </main>
