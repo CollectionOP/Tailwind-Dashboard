@@ -29,7 +29,7 @@
     <div class="flex">
         <!-- Side navbar -->
         <div class="w-16 fixed sm:w-64 left-0 top-0 h-full p-4 bg-blue-950">
-            <a class="flex items-center pb-4 border-b border-b-gray-800" href="index.html">
+            <a class="flex items-center pb-4 border-b border-b-gray-800" href="dashboard.html">
                 <img class="w-8 h-8 rounded object-cover" src="https://placehold.co/40x40" alt="">
                 <span class="hidden sm:block text-lg font-bold text-gray-200 ml-3">Logo</span>
             </a>
@@ -161,7 +161,16 @@
 
             <!-- Main navbar -->
             <nav class="w-11/12 mx-auto mt-8 py-2 px-4 bg-white flex items-center justify-end shadow-md shadow-black/5">
-                <div class="flex items-center mr-6">
+
+                <div class="border border-gray-400 rounded mr-8">
+                    <div class="my-1">
+                        <input type="text" class="peer block min-h-[auto] w-full rounded border-0 px-3 py-[0.05rem]"
+                            id="exampleFormControlInputText" placeholder="Search..." />
+                        </input>
+                    </div>
+                </div>
+
+                <div class="flex items-center mr-8">
                     <div class="w-13 text-right">
                         <span class="block text-sm">
                             John
@@ -181,7 +190,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <i class="ri-settings-4-line mr-3 text-lg"></i>
+                            <i class="ri-settings-4-line mr-2 text-lg"></i>
                         </a>
                     </li>
                 </ul>
