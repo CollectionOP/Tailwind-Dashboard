@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="dist/style.css">
-    <title>Dashboard</title>
+    <title>Best init - Index</title>
 </head>
 
 <body class="bg-gray-200">
@@ -29,7 +29,7 @@
     <div class="flex">
         <!-- Side navbar -->
         <div class="w-16 fixed sm:w-64 left-0 top-0 h-full p-4 bg-blue-950">
-            <a class="flex items-center pb-4 border-b border-b-gray-800" href="dashboard.html">
+            <a class="flex items-center pb-4 border-b border-b-gray-700" href="dashboard.html">
                 <img class="w-8 h-8 rounded object-cover" src="https://placehold.co/40x40" alt="">
                 <span class="hidden sm:block text-lg font-bold text-gray-200 ml-3">Logo</span>
             </a>
@@ -177,7 +177,45 @@
                             Doe
                         </span>
                     </div>
-                    <img class="w-10 h-10 ml-2" src="assets/avatar.svg" alt="">
+                    <div class="dropdown group relative inline-block">
+                        <img class="w-10 h-10 ml-2" src="assets/avatar.svg" alt="">
+                        <div
+                            class="dropdown-content hidden absolute mt-4 bg-white min-w-[180px] shadow-md shadow-black/20 z-10 group-hover:block">
+                            <div class="flex flex-col py-3 px-4 group-hover:block rounded-md overflow-hidden">
+                                <img class="w-10 h-10 mx-auto" src="assets/avatar.svg" alt="">
+                                <p class="text-sm text-gray-400 ml-2 mt-2">johndoe@gmail.com</p>
+                                <div class="mt-2">
+                                    <ul>
+                                        <li class="p-2 border-b border-gray-300">
+                                            <i class="ri-user-line"></i>
+                                            <a class="text-sm" href="">Profile</a>
+                                        </li>
+                                        <li class="p-2 border-b border-gray-300">
+                                            <i class="ri-mail-send-line"></i>
+                                            <a class="text-sm" href="">My Inbox</a>
+                                        </li>
+                                        <li class="p-2 border-b border-gray-300">
+                                            <i class="ri-edit-box-line"></i>
+                                            <a class="text-sm" href="">Edit Profile</a>
+                                        </li>
+                                        <li class="p-2 border-b border-gray-300">
+                                            <i class="ri-settings-4-line"></i>
+                                            <a class="text-sm" href="">Settings</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li class="p-2">
+                                            <i class="ri-logout-circle-r-line"></i>
+                                            <a class="text-sm text-green-500" href="">Logout</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
                 <ul class="flex w-16 justify-between">
