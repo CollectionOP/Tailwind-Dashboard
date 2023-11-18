@@ -241,62 +241,67 @@
             <div
                 class="w-11/12 h-96 mx-auto mt-8 bg-white rounded-xl shadow-md shadow-black/5 grid grid-rows-1 grid-cols-[250px_1fr]">
 
-                <div class="w-12/12">
+                <div class="w-[75px] lg:w-11/12">
 
-                    <div class="flex items-center py-3 px-6 border-b border-r border-b-gray-200">
-                        <h2 class="font-semibold font-mono text-gray-600">Best init mailbox</h2>
+                    <div class="flex items-center py-3 px-2 lg:px-6 border-b border-r border-b-gray-200">
+                        <h2 class="hidden lg:block font-semibold font-mono text-gray-600">Best init mailbox</h2>
+                        <h2 class="block lg:hidden text-sm font-semibold font-mono text-gray-600">Mailbox
+                        </h2>
                     </div>
 
-                    <div class="flex flex-col border-r border-b-gray-200">
+                    <div class="flex flex-col justify-center border-r border-b-gray-200">
 
                         <div class="mx-auto">
-                            <a class="inline-block font-semibold text-white bg-blue-600 p-2 rounded-md my-3 px-11"
-                                href="#">+ New Message
+                            <a class="inline-block font-semibold text-white bg-blue-600 p-2 rounded-md my-3 px-4 lg:px-8"
+                                href="#">+
+                                <span class="hidden lg:inline-block font-mono">New Message</span>
                             </a>
                         </div>
                         <ul>
                             <li class="hover:bg-blue-50 py-2">
                                 <a class="flex items-center text-blue-500 px-6" href="#">
-                                    <i class="ri-inbox-2-line mr-3 text-lg"></i>
-                                    <span class="text-sm">Inbox</span>
-                                    <span class="ml-auto text-[10px] bg-blue-200 rounded p-1">10</span>
+                                    <i class="ri-inbox-2-line ml-1 lg:ml-0 mr-3 text-lg"></i>
+                                    <span class="hidden lg:block text-sm">Inbox</span>
+                                    <span class="hidden lg:block ml-auto text-[10px] bg-blue-200 rounded p-1">10</span>
                                 </a>
                             </li>
                             <li class="hover:bg-blue-50 py-2">
                                 <a class="flex items-center px-6" href="#">
-                                    <i class="ri-star-line mr-3 text-lg"></i>
-                                    <span class="text-sm text-gray-600">Favorites</span>
+                                    <i class="ri-star-line ml-1 lg:ml-0 mr-3 text-lg"></i>
+                                    <span class="hidden lg:block text-sm text-gray-600">Favorites</span>
                                 </a>
                             </li>
                             <li class="hover:bg-blue-50 py-2">
                                 <a class="flex items-center px-6" href="#">
-                                    <i class="ri-time-line mr-3 text-lg"></i>
-                                    <span class="text-sm text-gray-600">Snoozed</span>
+                                    <i class="ri-time-line ml-1 lg:ml-0 mr-3 text-lg"></i>
+                                    <span class="hidden lg:block text-sm text-gray-600">Snoozed</span>
                                 </a>
                             </li>
                             <li class="hover:bg-blue-50 py-2">
                                 <a class="flex items-center px-6" href="#">
-                                    <i class="ri-send-plane-line mr-3 text-lg"></i>
-                                    <span class="text-sm text-gray-600">Sent</span>
+                                    <i class="ri-send-plane-line ml-1 lg:ml-0 mr-3 text-lg"></i>
+                                    <span class="hidden lg:block text-sm text-gray-600">Sent</span>
                                 </a>
                             </li>
                             <li class="hover:bg-blue-50 py-2">
                                 <a class="flex items-center px-6" href="#">
-                                    <i class="ri-spam-2-line mr-3 text-lg"></i>
-                                    <span class="text-sm text-gray-600">Spam</span>
-                                    <span class="ml-auto text-[10px] bg-blue-200 rounded p-1 text-blue-500">22</span>
+                                    <i class="ri-spam-2-line ml-1 lg:ml-0 mr-3 text-lg"></i>
+                                    <span class="hidden lg:block text-sm text-gray-600">Spam</span>
+                                    <span
+                                        class="hidden lg:block ml-auto text-[10px] bg-blue-200 rounded p-1 text-blue-500">22</span>
                                 </a>
                             </li>
                             <li class="hover:bg-blue-50 py-2">
                                 <a class="flex items-center px-6" href="#">
-                                    <i class="ri-file-3-line mr-3 text-lg"></i>
-                                    <span class="text-sm text-gray-600">Drafts</span>
+                                    <i class="ri-file-3-line ml-1 lg:ml-0 mr-3 text-lg"></i>
+                                    <span class="hidden lg:block text-sm text-gray-600">Drafts</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                </div>
 
+
+                </div>
 
 
             </div>
