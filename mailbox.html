@@ -239,24 +239,25 @@
 
             <!-- Inbox -->
             <div
-                class="w-11/12 h-96 mx-auto mt-8 bg-white rounded-xl shadow-md shadow-black/5 grid grid-rows-1 grid-cols-[250px_1fr]">
+                class="w-11/12 h-96 mx-auto mt-8 bg-white rounded-xl shadow-md shadow-black/5 grid grid-rows-1 grid-cols-[75px_1fr] lg:grid-cols-[250px_1fr]">
 
-                <div class="w-[75px] lg:w-11/12">
+                <div class="w-[75px] lg:w-[100%]">
 
-                    <div class="flex items-center py-3 px-2 lg:px-6 border-b border-r border-b-gray-200">
+                    <div class="flex items-center py-3.5 lg:py-3 px-2 lg:px-6 border-b border-r border-b-gray-200">
                         <h2 class="hidden lg:block font-semibold font-mono text-gray-600">Best init mailbox</h2>
                         <h2 class="block lg:hidden text-sm font-semibold font-mono text-gray-600">Mailbox
                         </h2>
                     </div>
 
-                    <div class="flex flex-col justify-center border-r border-b-gray-200">
+                    <div class="flex flex-col justify-center border-r border-r-gray-200">
 
                         <div class="mx-auto">
-                            <a class="inline-block font-semibold text-white bg-blue-600 p-2 rounded-md my-3 px-4 lg:px-8"
+                            <a class="inline-block font-semibold text-white bg-blue-600 p-2 rounded-md my-3 px-4 lg:px-11"
                                 href="#">+
                                 <span class="hidden lg:inline-block font-mono">New Message</span>
                             </a>
                         </div>
+
                         <ul>
                             <li class="hover:bg-blue-50 py-2">
                                 <a class="flex items-center text-blue-500 px-6" href="#">
@@ -299,10 +300,75 @@
                             </li>
                         </ul>
                     </div>
-
-
                 </div>
 
+                <div>
+
+                    <div class="items-center justify-between py-3 border-b border-b-gray-200">
+
+                        <!-- Filter and search bar -->
+                        <div class="flex justify-between items-center ml-3">
+                            <div class="min-w-[75px]">
+                                <input type="checkbox">
+                                <a class="px-2" href="">
+                                    <i class="ri-sound-module-line"></i>
+                                </a>
+                                <a href="">
+                                    <i class="ri-delete-bin-line"></i>
+                                </a>
+                            </div>
+
+                            <div class="max-w-[100px] mr-5">
+                                <input type="text" class="w-full rounded px-2" placeholder="Search..." />
+                                </input>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- mails -->
+                    <div class="p-3 bg-gray-100 hover:bg-blue-50">
+
+                        <div class="grid grid-rows-1 grid-cols-[130px_1fr_80px]">
+                            <div class="flex">
+                                <input type="checkbox">
+                                <i class="ri-star-line mr-1"></i>
+                                <img src="" alt="">
+                                <p>Slack</p>
+                            </div>
+
+                            <div class="justify-self-center h-6 overflow-hidden">
+                                <p>Online Franking order confirmation 9HXGDQ </p>
+                            </div>
+
+                            <div class="justify-self-end">
+                                Nov 20.
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <!-- 2nd email -->
+                    <!-- <div class="flex p-3 justify-between bg-gray-100 hover:bg-blue-50">
+                        <div class="w-3/12 flex ">
+                            <input type="checkbox">
+                            <div class="flex ml-2">
+                                <i class="ri-star-line mr-1"></i>
+                                <img src="" alt="">
+                                <p>Slack</p>
+                            </div>
+                        </div>
+
+                        <div class="w-6/12 h-6 overflow-hidden">
+                            <p>Online Franking order confirmation 9HXGDQ </p>
+                        </div>
+                        <div class="w-18">
+                            Nov 20.
+                        </div>
+                    </div> -->
+                </div>
 
             </div>
 
