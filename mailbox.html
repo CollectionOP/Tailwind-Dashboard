@@ -17,7 +17,7 @@
 <body class="bg-gray-200">
 
     <!--Breadcrumb navigation -->
-    <div class="mt-5 ml-16 sm:ml-64">
+    <div class="mt-5 ml-16 lg:ml-64">
         <ol class="list-reset flex w-11/12 mx-auto">
             <li>
                 <a href="index.html" class="text-blue-900 font-semibold mr-1">Dashboard</a>
@@ -31,12 +31,12 @@
 
     <!-- Side navbar -->
     <div class="flex">
-        <div class="w-30 fixed sm:w-64 left-0 top-0 h-full p-4 bg-blue-950">
+        <div class="w-30 fixed lg:w-64 left-0 top-0 h-full p-4 bg-blue-950">
             <a class="flex items-center pb-4 border-b border-b-gray-700" href="dashboard.html">
                 <img class="w-8 h-8 rounded object-cover" src="https://placehold.co/40x40" alt="">
-                <span class="hidden sm:block text-lg font-bold text-gray-200 ml-3 font-mono">Logo</span>
+                <span class="hidden lg:block text-lg font-bold text-gray-200 ml-3 font-mono">Logo</span>
             </a>
-            <ul class="hidden sm:block mt-3">
+            <ul class="hidden lg:block mt-3">
                 <li class="mb-1 group">
                     <a class="flex items-center py-2 px-4 text-gray-200 hover:bg-blue-900 hover:text-white hover:font-semibold rounded-md"
                         href="dashboard.html">
@@ -119,7 +119,7 @@
             </ul>
 
             <!-- mobile side nav -->
-            <div class="block sm:hidden mt-3">
+            <div class="block lg:hidden mt-3">
                 <a class="flex items-center border-t border-gray-800" href="#">
                     <i class="ri-menu-line py-2 text-3xl text-gray-100"></i>
                 </a>
@@ -157,7 +157,7 @@
         </div>
 
         <!-- Dashboard body -->
-        <main class="w-full ml-16 sm:ml-64 bg-gray-200 min-h-screen">
+        <main class="w-full ml-16 lg:ml-64 bg-gray-200 min-h-screen">
 
             <!-- Main navbar -->
             <nav class="w-11/12 mx-auto mt-8 py-2 px-4 bg-white flex items-center justify-end shadow-md shadow-black/5">
@@ -239,63 +239,63 @@
 
             <!-- Inbox -->
             <div
-                class="w-11/12 h-96 mx-auto mt-8 bg-white rounded-xl shadow-md shadow-black/5 grid grid-rows-1 grid-cols-[75px_1fr] lg:grid-cols-[250px_1fr]">
+                class="w-11/12 h-96 mx-auto mt-8 bg-white rounded-xl shadow-md shadow-black/5 grid grid-rows-1 grid-cols-[75px_1fr] md:grid-cols-[250px_1fr]">
 
-                <div class="w-[75px] lg:w-[100%]">
+                <div class="w-[75px] md:w-[100%]">
 
-                    <div class="flex items-center py-3.5 lg:py-3 px-2 lg:px-6 border-b border-r border-b-gray-200">
-                        <h2 class="hidden lg:block font-semibold font-mono text-gray-600">Best init mailbox</h2>
-                        <h2 class="block lg:hidden text-sm font-semibold font-mono text-gray-600">Mailbox
+                    <div class="flex items-center py-3.5 md:py-3 px-2 md:px-6 border-b border-r border-b-gray-200">
+                        <h2 class="hidden md:block font-semibold font-mono text-gray-600">Best init mailbox</h2>
+                        <h2 class="block md:hidden text-sm font-semibold font-mono text-gray-600">Mailbox
                         </h2>
                     </div>
 
                     <div class="flex flex-col justify-center border-r border-r-gray-200">
 
                         <div class="mx-auto">
-                            <a class="inline-block font-semibold text-white bg-blue-600 p-2 rounded-md my-3 px-4 lg:px-11"
+                            <a class="inline-block font-semibold text-white bg-blue-600 p-2 rounded-md my-3 px-4 md:px-11"
                                 href="#">+
-                                <span class="hidden lg:inline-block font-mono">New Message</span>
+                                <span class="hidden md:inline-block font-mono">New Message</span>
                             </a>
                         </div>
 
                         <ul>
                             <li class="hover:bg-blue-50 py-2">
                                 <a class="flex items-center text-blue-500 px-6" href="#">
-                                    <i class="ri-inbox-2-line ml-1 lg:ml-0 mr-3 text-lg"></i>
-                                    <span class="hidden lg:block text-sm">Inbox</span>
-                                    <span class="hidden lg:block ml-auto text-[10px] bg-blue-200 rounded p-1">10</span>
+                                    <i class="ri-inbox-2-line ml-1 md:ml-0 mr-3 text md"></i>
+                                    <span class="hidden md:block text-sm">Inbox</span>
+                                    <span class="hidden md:block ml-auto text-[10px] bg-blue-200 rounded p-1">10</span>
                                 </a>
                             </li>
                             <li class="hover:bg-blue-50 py-2">
                                 <a class="flex items-center px-6" href="#">
-                                    <i class="ri-star-line ml-1 lg:ml-0 mr-3 text-lg"></i>
-                                    <span class="hidden lg:block text-sm text-gray-600">Favorites</span>
+                                    <i class="ri-star-line ml-1 md:ml-0 mr-3 text md"></i>
+                                    <span class="hidden md:block text-sm text-gray-600">Favorites</span>
                                 </a>
                             </li>
                             <li class="hover:bg-blue-50 py-2">
                                 <a class="flex items-center px-6" href="#">
-                                    <i class="ri-time-line ml-1 lg:ml-0 mr-3 text-lg"></i>
-                                    <span class="hidden lg:block text-sm text-gray-600">Snoozed</span>
+                                    <i class="ri-time-line ml-1 md:ml-0 mr-3 text md"></i>
+                                    <span class="hidden md:block text-sm text-gray-600">Snoozed</span>
                                 </a>
                             </li>
                             <li class="hover:bg-blue-50 py-2">
                                 <a class="flex items-center px-6" href="#">
-                                    <i class="ri-send-plane-line ml-1 lg:ml-0 mr-3 text-lg"></i>
-                                    <span class="hidden lg:block text-sm text-gray-600">Sent</span>
+                                    <i class="ri-send-plane-line ml-1 md:ml-0 mr-3 text md"></i>
+                                    <span class="hidden md:block text-sm text-gray-600">Sent</span>
                                 </a>
                             </li>
                             <li class="hover:bg-blue-50 py-2">
                                 <a class="flex items-center px-6" href="#">
-                                    <i class="ri-spam-2-line ml-1 lg:ml-0 mr-3 text-lg"></i>
-                                    <span class="hidden lg:block text-sm text-gray-600">Spam</span>
+                                    <i class="ri-spam-2-line ml-1 md:ml-0 mr-3 text md"></i>
+                                    <span class="hidden md:block text-sm text-gray-600">Spam</span>
                                     <span
-                                        class="hidden lg:block ml-auto text-[10px] bg-blue-200 rounded p-1 text-blue-500">22</span>
+                                        class="hidden md:block ml-auto text-[10px] bg-blue-200 rounded p-1 text-blue-500">22</span>
                                 </a>
                             </li>
                             <li class="hover:bg-blue-50 py-2">
                                 <a class="flex items-center px-6" href="#">
-                                    <i class="ri-file-3-line ml-1 lg:ml-0 mr-3 text-lg"></i>
-                                    <span class="hidden lg:block text-sm text-gray-600">Drafts</span>
+                                    <i class="ri-file-3-line ml-1 md:ml-0 mr-3 text md"></i>
+                                    <span class="hidden md:block text-sm text-gray-600">Drafts</span>
                                 </a>
                             </li>
                         </ul>
